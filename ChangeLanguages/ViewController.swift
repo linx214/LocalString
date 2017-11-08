@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: TransferBaseVC {
     var varible = false
     lazy var changeButton: UIButton = {
         let button = UIButton()
@@ -26,6 +26,10 @@ class ViewController: UIViewController {
         configUI()
     }
     
+    override func updateLocalStrings() {
+        changeButton.setTitle(LocalString.stringFor(key: "buttonTitle"), for: .normal)
+    }
+    
     func setupUI() {
         self.view.addSubview(changeButton)
         changeButton.frame = CGRect(x: 0, y: 100, width: 100, height: 44)
@@ -33,11 +37,6 @@ class ViewController: UIViewController {
     
     func configUI() {
         self.view.backgroundColor = .white
-        updateTitle()
-    }
-    
-    func updateTitle() {
-        changeButton.setTitle(LocalString.stringFor(key: "buttonTitle"), for: .normal)
     }
     
     @objc func changeButtonClick() {
@@ -47,7 +46,8 @@ class ViewController: UIViewController {
             LocalString.changeLanguage(lang: "zh-Hans")
         }
         varible = !varible
-        updateTitle()
+        
+        NotificationCenter.default.post(name: TransferNotification, object: nil)
     }
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C52D21951FB2A00800EB4A5A /* Transferable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52D21941FB2A00800EB4A5A /* Transferable.swift */; };
+		C52D21991FB2A03900EB4A5A /* TransferBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52D21981FB2A03900EB4A5A /* TransferBaseVC.swift */; };
 		C5A58F1C1FB1925800535896 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A58F1B1FB1925800535896 /* AppDelegate.swift */; };
 		C5A58F1E1FB1925800535896 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A58F1D1FB1925800535896 /* ViewController.swift */; };
 		C5A58F231FB1925800535896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A58F221FB1925800535896 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C52D21941FB2A00800EB4A5A /* Transferable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transferable.swift; sourceTree = "<group>"; };
+		C52D21981FB2A03900EB4A5A /* TransferBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferBaseVC.swift; sourceTree = "<group>"; };
 		C5A58F181FB1925800535896 /* ChangeLanguages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChangeLanguages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A58F1B1FB1925800535896 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5A58F1D1FB1925800535896 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 			children = (
 				C5A58F321FB193C600535896 /* Localizable.strings */,
 				C5A58F341FB1946700535896 /* LocalString.swift */,
+				C52D21941FB2A00800EB4A5A /* Transferable.swift */,
+				C52D21981FB2A03900EB4A5A /* TransferBaseVC.swift */,
 			);
 			path = International;
 			sourceTree = "<group>";
@@ -146,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5A58F1E1FB1925800535896 /* ViewController.swift in Sources */,
+				C52D21991FB2A03900EB4A5A /* TransferBaseVC.swift in Sources */,
 				C5A58F351FB1946700535896 /* LocalString.swift in Sources */,
+				C52D21951FB2A00800EB4A5A /* Transferable.swift in Sources */,
 				C5A58F1C1FB1925800535896 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
